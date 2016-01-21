@@ -12,31 +12,46 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
-     padding: 20px;
+     
+}
+
+.bottom-background {
+     background-color: #F0F8FF;
+     padding-bottom : 20px;
 }
 
 .jumbotron {
-	position: relative;
-	background: none;
+     background: none;
 }
 
 .jumbotron:after {
      content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
+     background: url("../images/main_background.jpg");
      opacity: 0.2;
      top: 0;
      left: 0;
      bottom: 0;
      right: 0;
      position: absolute;
-     z-index: -1;	
+     z-index: -1;   
 }
 
 .jumbotron p {
      color: #6e6e6e;
 }
 
+.jumbotron p.active {
+     color: #1f6ddd;
+}
+
 .project a {
      text-align: center;
+}
+.project:hover {
+     border: 1px solid lightblue;
+     cursor: pointer;
+}
+
+.project {
+     padding-bottom: 15px; 
 }
